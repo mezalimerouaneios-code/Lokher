@@ -45,11 +45,19 @@
         lightboxInfoMedium.textContent = medium;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
+
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        if (scrollbarWidth > 0) {
+            document.body.style.paddingRight = scrollbarWidth + 'px';
+            document.querySelector('.header').style.paddingRight = scrollbarWidth + 'px';
+        }
     }
 
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        document.querySelector('.header').style.paddingRight = '';
     }
 
     artworkLinks.forEach(link => {
