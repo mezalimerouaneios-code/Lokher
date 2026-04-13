@@ -13,6 +13,7 @@
 <body>
     <header class="header">
         <a href="/" class="logo">Lokher</a>
+        <select id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="ar">ع</option></select>
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span class="menu-line"></span>
             <span class="menu-line"></span>
@@ -25,11 +26,11 @@
             <span class="menu-line"></span>
         </button>
         <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Selected Works</a></li>
-            <li><a href="journey.html">Exhibitions & Journey</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="portfolio.html" data-i18n="nav-works">Selected Works</a></li>
+            <li><a href="journey.html" data-i18n="nav-journey">Exhibitions & Journey</a></li>
+            <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
         </ul>
         <div class="nav-meta">
             <p>Algiers, Algeria</p>
@@ -37,28 +38,26 @@
     </nav>
 
     <main>
-        <div class="full-width-image"><img src="extracted_images/compressed/page_01.jpg" alt="Lokher Portfolio Cover"></div>
+        <div class="full-width-image"><img src="extracted_images/web_hd/Main page image.jpg" alt="Lokher Portfolio Cover"></div>
         <section id="showcase"></section>
         <section id="about" class="about">
             <div class="about-content">
-                <h2>About</h2>
-                <p>Lokher is an Algerian painter who graduated from the Higher School of Fine Arts of Algiers. His practice is rooted in a sensitive exploration where gaze, body, and movement play a central role. Rather than representing the world as it is, he is interested in how it is perceived, traversed, and sometimes displaced. His works often emerge from a careful attention to details, deviations, and the zones of tension between the visible and the imaginary.</p>
-                <p>Lokher's work is built through a direct relationship with space. Movement becomes a tool for reflection, and walking a means to observe forms, colors, and perspectives differently. This approach gives rise to a fragmented pictorial universe, where images function as layers of thought, attempts to capture inner states in constant transformation. Rejecting linear reading, he develops an aesthetic that embraces ambiguity, intuition, and the viewer's sensory experience.</p>
-                <p>His journey has led him to present his work on several international stages. In 2023, he exhibited with Inloco Gallery in Dubai, followed in 2024 by Marrakech with BCK Gallery, in collaboration with Les Créatifs Africains. That same year, he participated in the 2024 Design Biennale, presenting at the Embassy of Belgium and the Dojo Algiers, and took part in the international artistic residency IFCA. In 2025, Lokher held a solo exhibition at XBM, an important milestone affirming the coherence of his pictorial universe and his position within the contemporary scene.</p>
+                <h2 data-i18n="nav-about">About</h2>
+                <p data-i18n="bio-main">Lokher is an Algerian painter who graduated from the Higher School of Fine Arts of Algiers. His practice is rooted in a sensitive exploration where gaze, body, and movement play a central role. Rather than representing the world as it is, he is interested in how it is perceived, traversed, and sometimes displaced. His works often emerge from a careful attention to details, deviations, and the zones of tension between the visible and the imaginary.</p>
 
                 <blockquote>
-                    <p><strong>Salah Badis:</strong> "For Lokher, childhood is not a lost country. Rather, it is a collection of gestures and movements in space; it is a kind of geometric forms and invisible places that exist everywhere, and he sees them. Like in Alice in Wonderland, for Lokher too, there is always a 'rabbit hole' somewhere, and he does not just imagine and draw it—no, he moves through space as if searching for it, ready to jump in. I had the chance to travel across Algeria with him, from snowy mountains to the desert of Djanet, passing through olive forests and the oasis of Timimoun, and he couldn't walk on the same paths as us. He was always searching for a perspective, a color, a POV (as Gen Z would say), and he would repeat—through his body—the gestures of the body he was drawing, as if training himself to leap after the White Rabbit into the hole."</p>
+                    <p><strong>Salah Badis:</strong> <span data-i18n="critic-salah">"For Lokher, childhood is not a lost country..."</span></p>
                 </blockquote>
 
                 <blockquote>
-                    <p><strong>Reslane Lounici:</strong> "The Algerian artist Lokher is among those who tentatively explore their deepest emotions. While his subjects are protean, his aesthetic seems locked within a universe so vast that it defies any hasty definition. It is perhaps here that the essence of his name lies: The Other. He refuses to simplify being; on the contrary, he seeks to grasp himself in all his complexity by multiplying. For Lokher, identity is not a straight line but a prism. By exploring and embodying all his potential 'others,' he ultimately finds himself. His works thus reveal a fresco of fragments of thought, unveiling a new truth, making otherness the shortest path to the intimate."</p>
+                    <p><strong>Reslane Lounici:</strong> <span data-i18n="critic-reslane">"The Algerian artist Lokher is among those who tentatively explore..."</span></p>
                 </blockquote>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="contact-content">
-                <h2>Contact</h2>
+                <h2 data-i18n="nav-contact">Contact</h2>
                 <address>
                     <p><a href="mailto:lokhercontact@gmail.com">lokhercontact@gmail.com</a></p>
                     <p>+213 558 480 366</p>
@@ -88,23 +87,65 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
     <script>
         (function() {
             const artworkPaths = [
-                'extracted_images/compressed/page_06.jpg',
-                'extracted_images/compressed/page_07.jpg',
-                'extracted_images/compressed/page_08.jpg',
-                'extracted_images/compressed/page_09.jpg',
-                'extracted_images/compressed/page_10.jpg',
-                'extracted_images/compressed/page_11.jpg',
-                'extracted_images/compressed/page_13.jpg',
-                'extracted_images/compressed/page_14.jpg',
-                'extracted_images/compressed/page_15.jpg',
-                'extracted_images/compressed/page_16.jpg',
-                'extracted_images/compressed/page_17.jpg',
-                'extracted_images/compressed/page_18.jpg',
-                'extracted_images/compressed/page_12.jpg'
+                'extracted_images/web_hd/Paintings/_DSF3056.jpg',
+                'extracted_images/web_hd/Paintings/rectongulaire prise.jpg',
+                'extracted_images/web_hd/Paintings/KMDFE0646.jpg',
+                'extracted_images/web_hd/Paintings/IMG_7886.jpg',
+                'extracted_images/web_hd/Paintings/IMG_6946.jpg',
+                'extracted_images/web_hd/Paintings/IMG_2811.jpg',
+                'extracted_images/web_hd/Paintings/DTBEE0734.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7650.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7627.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7626.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7619.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7618.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7617.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7616.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7615 1.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7614.jpg',
+                'extracted_images/web_hd/Paintings/DSC_7613.jpg',
+                'extracted_images/web_hd/Drawings/IMG_2739.jpg',
+                'extracted_images/web_hd/Drawings/IMG_2738.jpg',
+                'extracted_images/web_hd/Drawings/IMG_2736.jpg',
+                'extracted_images/web_hd/Drawings/IMG_2731.jpg',
+                'extracted_images/web_hd/Drawings/IMG_2729.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7649.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7648.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7647.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7646.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7645.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7644.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7643.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7642.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7641.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7640.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7639.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7638.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7637.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7636.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7635.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7634.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7633.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7632.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7631.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7630.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7629.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7628.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7625.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7624.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7622.jpg',
+                'extracted_images/web_hd/Drawings/DSC_7621.jpg',
+                'extracted_images/web_hd/Murals/IMG_6781.jpg',
+                'extracted_images/web_hd/Murals/IMG_3176.jpg',
+                'extracted_images/web_hd/Murals/IMG_0761.jpg',
+                'extracted_images/web_hd/Murals/IMG_0036.jpg',
+                'extracted_images/web_hd/Murals/DSC_7762.jpg',
+                'extracted_images/web_hd/Murals/DSC_7762 1.jpg'
             ];
 
             function shuffle(array) {

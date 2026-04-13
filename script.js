@@ -83,4 +83,28 @@
             closeLightbox();
         }
     });
+
+    const langSwitch = document.getElementById('lang-switch');
+
+    function applyTranslations(lang) {
+        document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                el.innerText = translations[lang][key];
+            }
+        });
+    }
+
+    if (langSwitch) {
+        const savedLang = localStorage.getItem('lang') || 'en';
+        langSwitch.value = savedLang;
+        applyTranslations(savedLang);
+
+        langSwitch.addEventListener('change', function() {
+            const selectedLang = this.value;
+            localStorage.setItem('lang', selectedLang);
+            applyTranslations(selectedLang);
+        });
+    }
 })();

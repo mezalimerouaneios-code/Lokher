@@ -13,6 +13,7 @@
 <body>
     <header class="header">
         <a href="/" class="logo">Lokher</a>
+        <select id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="ar">ع</option></select>
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span class="menu-line"></span>
             <span class="menu-line"></span>
@@ -25,11 +26,11 @@
             <span class="menu-line"></span>
         </button>
         <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Selected Works</a></li>
-            <li><a href="journey.html">Exhibitions & Journey</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="portfolio.html" data-i18n="nav-works">Selected Works</a></li>
+            <li><a href="journey.html" data-i18n="nav-journey">Exhibitions & Journey</a></li>
+            <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
         </ul>
         <div class="nav-meta">
             <p>Algiers, Algeria</p>
@@ -37,184 +38,675 @@
     </nav>
 
     <main>
-        <div class="full-width-image"><img src="extracted_images/compressed/page_01.jpg" alt="Lokher Portfolio Cover"></div>
+        <div class="full-width-image"><img src="extracted_images/web_hd/Main page image.jpg" alt="Lokher Portfolio Cover"></div>
         <section id="works" class="works">
             <div class="works-header">
                 <h1>Works</h1>
             </div>
 
-            <h2>Paintings</h2>
+            <h2 data-i18n="paintings-title">Paintings</h2>
             <div class="gallery">
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Schrödinger's Little House">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_06.jpg" alt="Schrödinger's Little House" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/_DSF3056.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Schrödinger's Little House</h2>
-                        <p>2026</p>
-                        <p>Acrylic on canvas, 100x100cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Rétro Jalousie">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_07.jpg" alt="Rétro Jalousie" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/rectongulaire prise.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Rétro Jalousie</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 129x94cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View L'oreiller">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_08.jpg" alt="L'oreiller" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/KMDFE0646.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>L'oreiller</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 62x93cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Reaction of the kisse">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_09.jpg" alt="Reaction of the kisse" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/IMG_7886.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Reaction of the kisse</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 77x86cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Light boxing">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_10.jpg" alt="Light boxing" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/IMG_6946.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Light boxing</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 94.5x98cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View L'intrigue">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_11.jpg" alt="L'intrigue" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/IMG_2811.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>L'intrigue</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 94.5x98cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View C'est leger un cheval">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_13.jpg" alt="C'est leger un cheval" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DTBEE0734.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>C'est leger un cheval</h2>
-                        <p>2025</p>
-                        <p>Acrylic on canvas, 200x90cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View TITLED-UN">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_14.jpg" alt="TITLED-UN" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7650.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>TITLED-UN</h2>
-                        <p>2024</p>
-                        <p>Acrylic on canvas, 120x160cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Bikala">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_15.jpg" alt="Bikala" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7627.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Bikala</h2>
-                        <p>2024</p>
-                        <p>Acrylic on canvas, 120x160cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View POIDS 100">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_16.jpg" alt="POIDS 100" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7626.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>POIDS 100</h2>
-                        <p>2024</p>
-                        <p>Acrylic on canvas, 120x160cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View STRANGE ADVENTURE">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_17.jpg" alt="STRANGE ADVENTURE" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7619.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>STRANGE ADVENTURE</h2>
-                        <p>2023</p>
-                        <p>Acrylic on canvas, 180x180cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View EL-NOUSKHAT">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_18.jpg" alt="EL-NOUSKHAT" loading="lazy">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7618.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>EL-NOUSKHAT</h2>
-                        <p>2023</p>
-                        <p>Acrylic on canvas, 125x170cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7617.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7616.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7615 1.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7614.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Paintings/DSC_7613.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
             </div>
 
-            <h2>Drawings</h2>
+            <h2 data-i18n="drawings-title">Drawings</h2>
             <div class="gallery">
                 <article class="artwork">
-                    <button class="artwork-link" aria-label="View Decision">
+                    <button class="artwork-link" aria-label="View artwork">
                         <div class="artwork-image">
-                            <img src="extracted_images/compressed/page_12.jpg" alt="Decision" loading="lazy">
+                            <img src="extracted_images/web_hd/Drawings/IMG_2739.jpg" alt="Artwork" loading="lazy">
                         </div>
                     </button>
                     <div class="artwork-info">
-                        <h2>Decision</h2>
-                        <p>2025</p>
-                        <p>Ink on paper, 35x27cm</p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/IMG_2738.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/IMG_2736.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/IMG_2731.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/IMG_2729.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7649.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7648.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7647.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7646.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7645.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7644.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7643.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7642.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7641.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7640.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7639.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7638.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7637.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7636.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7635.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7634.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7633.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7632.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7631.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7630.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7629.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7628.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7625.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7624.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7622.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Drawings/DSC_7621.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </article>
             </div>
 
             <h2>Murals</h2>
             <div class="gallery">
-                <p>Coming Soon</p>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/IMG_6781.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/IMG_3176.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/IMG_0761.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/IMG_0036.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/DSC_7762.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+                <article class="artwork">
+                    <button class="artwork-link" aria-label="View artwork">
+                        <div class="artwork-image">
+                            <img src="extracted_images/web_hd/Murals/DSC_7762 1.jpg" alt="Artwork" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="artwork-info">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
             </div>
 
             <h2>Videos</h2>
             <div class="gallery">
-                <p>Coming Soon</p>
+                <p data-i18n="coming-soon">Coming Soon</p>
             </div>
         </section>
         <div class="full-width-image"><img src="extracted_images/compressed/page_19.jpg" alt="Lokher Portfolio Back"></div>
@@ -239,6 +731,7 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
