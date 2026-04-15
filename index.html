@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokher — Artist</title>
+    <meta name="description" content="Portfolio of Lokher, artist based in Algiers, Algeria">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Lokher</a>
+        <select id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="ar">ع</option></select>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </header>
+
+    <nav class="nav-overlay" aria-hidden="true">
+        <button class="nav-close" aria-label="Close menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="portfolio.html" data-i18n="nav-works">Selected Works</a></li>
+            <li><a href="journey.html" data-i18n="nav-journey">Exhibitions & Journey</a></li>
+            <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-meta">
+            <p>Algiers, Algeria</p>
+        </div>
+    </nav>
+
+    <main>
+        <div class="full-width-image"><img src="extracted_images/web_hd/Main page image.jpg" alt="Lokher Portfolio Cover"></div>
+        <section id="showcase"></section>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2 data-i18n="nav-about">About</h2>
+                <p data-i18n="bio-main">Lokher is an Algerian painter who graduated from the Higher School of Fine Arts of Algiers. His practice is rooted in a sensitive exploration where gaze, body, and movement play a central role. Rather than representing the world as it is, he is interested in how it is perceived, traversed, and sometimes displaced. His works often emerge from a careful attention to details, deviations, and the zones of tension between the visible and the imaginary.</p>
+
+                <blockquote>
+                    <p><strong>Salah Badis:</strong> <span data-i18n="critic-salah">"For Lokher, childhood is not a lost country..."</span></p>
+                </blockquote>
+
+                <blockquote>
+                    <p><strong>Reslane Lounici:</strong> <span data-i18n="critic-reslane">"The Algerian artist Lokher is among those who tentatively explore..."</span></p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2 data-i18n="nav-contact">Contact</h2>
+                <address>
+                    <p><a href="mailto:lokhercontact@gmail.com">lokhercontact@gmail.com</a></p>
+                    <p>+213 558 480 366</p>
+                    <p>Algiers, Algeria</p>
+                </address>
+            </div>
+        </section>
+        <div class="full-width-image"><img src="extracted_images/compressed/page_19.jpg" alt="Lokher Portfolio Back"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Lokher</p>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+        </div>
+        <div class="lightbox-info">
+            <h2></h2>
+            <p class="lightbox-medium"></p>
+            <p class="lightbox-dimensions"></p>
+            <p class="lightbox-year"></p>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        (function() {
+            const artworkPaths = [
+                'extracted_images/web_hd/Paintings/bikala-acrylic-on-canvas-120x160cm-2024.jpg',
+                'extracted_images/web_hd/Paintings/cest-leger-un-cheval-acrylic-on-canvas-200x90cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/dsc-7617.jpg',
+                'extracted_images/web_hd/Paintings/dsc-7618.jpg',
+                'extracted_images/web_hd/Paintings/dsc-7626.jpg',
+                'extracted_images/web_hd/Paintings/img-7886.jpg',
+                'extracted_images/web_hd/Paintings/lintrigue-acrylic-on-canvas-94x98cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/loreiller-acrylic-on-canvas-62x93cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/light-boxing-acrylic-on-canvas-94x98cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/poids-100-acrylic-on-canvas-120x160cm-2024.jpg',
+                'extracted_images/web_hd/Paintings/reaction-of-the-kiss-acrylic-on-canvas-77x86cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/retro-jalousie-acrylic-on-canvas-129x94cm-2025.jpg',
+                'extracted_images/web_hd/Paintings/titled-un-acrylic-on-canvas-120x160cm-2024.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-2025.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-35x27cm-2025.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-35x27cm-2025-2.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-35x27cm-2025-3.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-35x27cm-2025-4.jpg',
+                'extracted_images/web_hd/Drawings/decision-ink-on-paper-35x27cm-2025-5.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7628.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7629.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7632.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7633.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7634.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7635.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7636.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7637.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7638.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7639.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7640.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7641.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7642.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7643.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7644.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7645.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7646.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7647.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7648.jpg',
+                'extracted_images/web_hd/Drawings/dsc-7649.jpg',
+                'extracted_images/web_hd/Drawings/img-2729.jpg',
+                'extracted_images/web_hd/Drawings/img-2731.jpg',
+                'extracted_images/web_hd/Drawings/img-2736.jpg',
+                'extracted_images/web_hd/Drawings/img-2738.jpg',
+                'extracted_images/web_hd/Drawings/img-2739.jpg',
+                'extracted_images/web_hd/Drawings/img-4566.jpg',
+                'extracted_images/web_hd/Drawings/img-4567.jpg',
+                'extracted_images/web_hd/Drawings/img-4568.jpg',
+                'extracted_images/web_hd/Drawings/img-4569.jpg',
+                'extracted_images/web_hd/Drawings/img-4570.jpg',
+                'extracted_images/web_hd/Drawings/img-4571.jpg',
+                'extracted_images/web_hd/Murals/img-6781.jpg',
+                'extracted_images/web_hd/Murals/img-3176.jpg',
+                'extracted_images/web_hd/Murals/img-0761.jpg',
+                'extracted_images/web_hd/Murals/img-0036.jpg',
+                'extracted_images/web_hd/Murals/dsc-7762.jpg',
+                'extracted_images/web_hd/Murals/dsc-7762-1.jpg'
+            ];
+
+            function shuffle(array) {
+                const arr = [...array];
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+                return arr;
+            }
+
+            const showcase = document.getElementById('showcase');
+            if (showcase) {
+                const shuffled = shuffle(artworkPaths);
+                const count = Math.floor(Math.random() * 3) + 3;
+                const selected = shuffled.slice(0, count);
+
+                selected.forEach((src) => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.className = 'slide';
+                    img.alt = 'Artwork';
+                    img.loading = 'lazy';
+                    showcase.appendChild(img);
+                });
+
+                const slides = showcase.querySelectorAll('.slide');
+                if (slides.length > 0) {
+                    slides[0].classList.add('active');
+
+                    let currentIndex = 0;
+                    setInterval(() => {
+                        slides[currentIndex].classList.remove('active');
+                        currentIndex = (currentIndex + 1) % slides.length;
+                        slides[currentIndex].classList.add('active');
+                    }, 4000);
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

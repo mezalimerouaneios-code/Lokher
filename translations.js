@@ -1,0 +1,47 @@
+const translations = {
+  en: {
+    "nav-home": "Home",
+    "nav-works": "Selected Works",
+    "nav-journey": "Exhibitions & Journey",
+    "nav-about": "About",
+    "nav-contact": "Contact",
+    "bio-main": "Lokher is an Algerian painter who graduated from the Higher School of Fine Arts of Algiers. His practice is rooted in a sensitive exploration where gaze, body, and movement play a central role. Rather than representing the world as it is, he is interested in how it is perceived, traversed, and sometimes displaced. His works often emerge from a careful attention to details, deviations, and the zones of tension between the visible and the imaginary.\n\nLokher's work is built through a direct relationship with space. Movement becomes a tool for reflection, and walking a means to observe forms, colors, and perspectives differently. This approach gives rise to a fragmented pictorial universe, where images function as layers of thought, attempts to capture inner states in constant transformation. Rejecting linear reading, he develops an aesthetic that embraces ambiguity, intuition, and the viewer's sensory experience.\n\nHis journey has led him to present his work on several international stages. In 2023, he exhibited with Inloco Gallery in Dubai, followed in 2024 by Marrakech with BCK Gallery, in collaboration with Les Créatifs Africains. That same year, he participated in the 2024 Design Biennale, presenting at the Embassy of Belgium and the Dojo Algiers, and took part in the international artistic residency IFCA. In 2025, Lokher held a solo exhibition at XBM, an important milestone affirming the coherence of his pictorial universe and his position within the contemporary scene.",
+    "critic-salah": "\"For Lokher, childhood is not a lost country. Rather, it is a collection of gestures and movements in space; it is a kind of geometric forms and invisible places that exist everywhere, and he sees them. Like in Alice in Wonderland, for Lokher too, there is always a 'rabbit hole' somewhere, and he does not just imagine and draw it—no, he moves through space as if searching for it, ready to jump in. I had the chance to travel across Algeria with him, from snowy mountains to the desert of Djanet, passing through olive forests and the oasis of Timimoun, and he couldn't walk on the same paths as us. He was always searching for a perspective, a color, a POV (as Gen Z would say), and he would repeat—through his body—the gestures of the body he was drawing, as if training himself to leap after the White Rabbit into the hole.\"",
+    "critic-reslane": "\"The Algerian artist Lokher is among those who tentatively explore their deepest emotions. While his subjects are protean, his aesthetic seems locked within a universe so vast that it defies any hasty definition. It is perhaps here that the essence of his name lies: The Other. He refuses to simplify being; on the contrary, he seeks to grasp himself in all his complexity by multiplying. For Lokher, identity is not a straight line but a prism. By exploring and embodying all his potential 'others,' he ultimately finds himself. His works thus reveal a fresco of fragments of thought, unveiling a new truth, making otherness the shortest path to the intimate.\"",
+    "mat-acrylic": "Acrylic on canvas",
+    "mat-ink": "Ink on paper",
+    "paintings-title": "Paintings",
+    "drawings-title": "Drawings",
+    "coming-soon": "Coming Soon"
+  },
+  fr: {
+    "nav-home": "Accueil",
+    "nav-works": "Œuvres Sélectionnées",
+    "nav-journey": "Expositions et Parcours",
+    "nav-about": "À propos",
+    "nav-contact": "Contact",
+    "bio-main": "Lokher est un peintre algérien, diplômé de l'École Supérieure des Beaux-Arts d'Alger. Sa pratique s'enracine dans une exploration sensible où le regard, le corps et le mouvement jouent un rôle central. Plutôt que de représenter le monde tel qu'il est, il s'intéresse à la façon dont il est perçu, traversé et parfois déplacé. Ses œuvres émergent souvent d'une attention minutieuse aux détails, aux déviations et aux zones de tension entre le visible et l'imaginaire.\n\nL'œuvre de Lokher se construit à travers un rapport direct à l'espace. Le mouvement devient un outil de réflexion, et la marche un moyen d'observer les formes, les couleurs et les perspectives différemment. Cette approche donne naissance à un univers pictural fragmenté, où les images fonctionnent comme des couches de pensées, des tentatives de capturer des états intérieurs en constante transformation. Rejetant une lecture linéaire, il développe une esthétique qui embrasse l'ambiguïté, l'intuition et l'expérience sensorielle du spectateur.\n\nSon parcours l'a amené à présenter son travail sur plusieurs scènes internationales. En 2023, il expose avec Inloco Gallery à Dubaï, suivi en 2024 par Marrakech avec BCK Gallery, en collaboration avec Les Créatifs Africains. Cette même année, il participe à la DZIGN Biennale, présentant à l'Ambassade de Belgique et au Dojo Alger, et prend part à la résidence artistique internationale IFCA. En 2025, Lokher réalise une exposition personnelle à XBM, une étape importante affirmant la cohérence de son univers pictural et sa position sur la scène contemporaine.",
+    "critic-salah": "\"Pour Lokher, l'enfance n'est pas un pays perdu. C'est plutôt une collection de gestes et de mouvements dans l'espace ; c'est une sorte de formes géométriques et de lieux invisibles qui existent partout, et il les voit. Comme dans Alice au pays des merveilles, pour Lokher aussi, il y a toujours un « terrier de lapin » quelque part, et il ne fait pas que l'imaginer et le dessiner — non, il se déplace dans l'espace comme s'il le cherchait, prêt à sauter dedans. J'ai eu la chance de traverser l'Algérie avec lui, des montagnes enneigées au désert de Djanet, en passant par les oliveraies et l'oasis de Timimoun, et il ne pouvait pas marcher sur les mêmes chemins que nous. Il cherchait toujours une perspective, une couleur, un POV, et il répétait — à travers son corps — les gestes du corps qu'il dessinait, comme s'il s'entraînait à bondir après le Lapin Blanc dans le terrier.\"",
+    "critic-reslane": "\"L'artiste algérien Lokher fait partie de ceux qui explorent à tâtons leurs émotions les plus profondes. Si ses sujets sont protéiformes, son esthétique semble enfermée dans un univers si vaste qu'il défie toute définition hâtive. C'est peut-être ici que réside l'essence de son nom : L'Autre. Il refuse de simplifier l'être ; au contraire, il cherche à se saisir dans toute sa complexité en se multipliant. Pour Lokher, l'identité n'est pas une ligne droite mais un prisme. En explorant et en incarnant tous ses « autres » potentiels, il finit par se trouver lui-même. Ses œuvres révèlent ainsi une fresque de fragments de pensée, dévoilant une nouvelle vérité, faisant de l'altérité le chemin le plus court vers l'intime.\"",
+    "mat-acrylic": "Acrylique sur toile",
+    "mat-ink": "Encre sur papier",
+    "paintings-title": "Peintures",
+    "drawings-title": "Dessins",
+    "coming-soon": "Bientôt Disponible"
+  },
+  ar: {
+    "nav-home": "الرئيسية",
+    "nav-works": "أعمال مختارة",
+    "nav-journey": "المعارض والمسيرة الفنية",
+    "nav-about": "حول",
+    "nav-contact": "اتصل بنا",
+    "bio-main": "لوخير هو رسام جزائري تخرج من المدرسة العليا للفنون الجميلة بالجزائر العاصمة. تتجذر ممارسته في استكشاف حساس حيث يلعب النظر والجسد والحركة دورًا مركزيًا. بدلاً من تمثيل العالم كما هو، يهتم بكيفية إدراكه، وعبوره، وإزاحته أحياناً. غالبًا ما تنبثق أعماله من اهتمام دقيق بالتفاصيل والانحرافات ومناطق التوتر بين المرئي والمتخيل.\n\nيُبنى عمل لوخير من خلال علاقة مباشرة مع الفضاء. تصبح الحركة أداة للتفكير، والمشي وسيلة لمراقبة الأشكال والألوان والمنظورات بشكل مختلف. يولد هذا النهج كوناً تصويرياً مجزأً، حيث تعمل الصور كطبقات من الفكر، ومحاولات لالتقاط حالات داخلية في تحول مستمر. رافضاً القراءة الخطية، يطور جمالية تحتضن الغموض والحدس والتجربة الحسية للمشاهد.\n\nقادته رحلته إلى تقديم أعماله على عدة مسارح دولية. في عام 2023، عرض أعماله مع معرض إنلوكو في دبي، تلاها في عام 2024 في مراكش بالتعاون مع المبدعين الأفارقة. في نفس العام، شارك في بينالي التصميم 2024، وشارك في الإقامة الفنية الدولية (IFCA). في عام 2025، أقام معرضًا فرديًا في (XBM)، وهو معلم مهم يؤكد تماسك عالمه التصويري ومكانته داخل المشهد المعاصر.",
+    "critic-salah": "\"بالنسبة لـ لوخير، الطفولة ليست بلداً مفقوداً. بل هي مجموعة من الإيماءات والحركات في الفضاء؛ إنها نوع من الأشكال الهندسية والأماكن غير المرئية التي توجد في كل مكان، وهو يراها. كما في أليس في بلاد العجائب، بالنسبة لـ لوخير أيضًا، هناك دائمًا 'جحر أرنب' في مكان ما، وهو مستعد للقفز فيه. لقد أتيحت لي فرصة السفر عبر الجزائر معه، من الجبال المغطاة بالثلوج إلى صحراء جانت، وكان دائمًا يبحث عن منظور، أو لون، وكان يكرر — بجسده — إيماءات الجسد الذي كان يرسمه، وكأنه يدرب نفسه على القفز وراء الأرنب الأبيض.\"",
+    "critic-reslane": "\"الفنان الجزائري لوخير هو من بين أولئك الذين يستكشفون مشاعرهم العميقة بتأنٍ. في حين أن مواضيعه متغيرة الأشكال، تبدو جمالياته محبوسة داخل كون واسع لدرجة أنه يتحدى أي تعريف متسرع. ولعل هنا يكمن جوهر اسمه: 'الآخر'. يرفض تبسيط الكينونة؛ بل يسعى إلى فهم نفسه بكل تعقيداته من خلال التعدد. بالنسبة لـ لوخير، الهوية ليست خطاً مستقيماً بل موشوراً. من خلال استكشاف جميع شخصياته 'الأخرى' المحتملة، فإنه يجد نفسه ويكشف عن حقيقة جديدة.\"",
+    "mat-acrylic": "أكريليك على قماش",
+    "mat-ink": "حبر على ورق",
+    "paintings-title": "لوحات",
+    "drawings-title": "رسومات",
+    "coming-soon": "قريباً"
+  }
+};
