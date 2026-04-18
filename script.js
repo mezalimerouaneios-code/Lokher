@@ -32,17 +32,19 @@
     const lightbox = document.querySelector('.lightbox');
     const lightboxImage = document.querySelector('.lightbox-image');
     const lightboxInfoTitle = document.querySelector('.lightbox-info h2');
-    const lightboxInfoMeta = document.querySelector('.lightbox-info p:first-of-type');
-    const lightboxInfoMedium = document.querySelector('.lightbox-info p:last-of-type');
+    const lightboxInfoMedium = document.querySelector('.lightbox-medium');
+    const lightboxInfoDimensions = document.querySelector('.lightbox-dimensions');
+    const lightboxInfoYear = document.querySelector('.lightbox-year');
     const lightboxClose = document.querySelector('.lightbox-close');
     const artworkLinks = document.querySelectorAll('.artwork-link');
 
-    function openLightbox(imgSrc, title, year, medium) {
+    function openLightbox(imgSrc, title, medium, dimensions, year) {
         lightboxImage.src = imgSrc;
         lightboxImage.alt = title;
         lightboxInfoTitle.textContent = title;
-        lightboxInfoMeta.textContent = year;
         lightboxInfoMedium.textContent = medium;
+        lightboxInfoDimensions.textContent = dimensions;
+        lightboxInfoYear.textContent = year;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
 
@@ -64,10 +66,12 @@
         link.addEventListener('click', function() {
             const img = this.querySelector('img');
             const info = this.parentElement.querySelector('.artwork-info');
+            const paragraphs = info.querySelectorAll('p');
             const title = info.querySelector('h2').textContent;
-            const year = info.querySelector('p:first-of-type').textContent;
-            const medium = info.querySelector('p:last-of-type').textContent;
-            openLightbox(img.src, title, year, medium);
+            const medium = paragraphs[0] ? paragraphs[0].textContent : '';
+            const dimensions = paragraphs[1] ? paragraphs[1].textContent : '';
+            const year = paragraphs[2] ? paragraphs[2].textContent : '';
+            openLightbox(img.src, title, medium, dimensions, year);
         });
     });
 
