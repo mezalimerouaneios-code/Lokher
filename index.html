@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokher — Artist</title>
+    <meta name="description" content="Portfolio of Lokher, artist based in Algiers, Algeria">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Lokher</a>
+        <select id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="ar">ع</option></select>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </header>
+
+    <nav class="nav-overlay" aria-hidden="true">
+        <button class="nav-close" aria-label="Close menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li class="nav-works-item">
+                <button class="nav-works-toggle" type="button" aria-expanded="false" data-i18n="nav-works">Selected Works</button>
+                <ul class="nav-sublist" hidden>
+                    <li><a href="paintings.html">Paintings</a></li>
+                    <li><a href="drawings.html">Drawings</a></li>
+                </ul>
+            </li>
+            <li><a href="journey.html" data-i18n="nav-journey">Exhibitions & Journey</a></li>
+            <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-meta">
+            <p>Algiers, Algeria</p>
+        </div>
+    </nav>
+
+    <main>
+        <div class="full-width-image"><img src="extracted_images/web_hd/Main page image.jpg" alt="Lokher Portfolio Cover"></div>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2 data-i18n="nav-about">About</h2>
+                <p data-i18n="bio-main">Lokher is an Algerian painter who graduated from the Higher School of Fine Arts of Algiers. His practice is rooted in a sensitive exploration where gaze, body, and movement play a central role. Rather than representing the world as it is, he is interested in how it is perceived, traversed, and sometimes displaced. His works often emerge from a careful attention to details, deviations, and the zones of tension between the visible and the imaginary.</p>
+
+                <blockquote>
+                    <p><strong>Salah Badis:</strong> <span data-i18n="critic-salah">"For Lokher, childhood is not a lost country..."</span></p>
+                </blockquote>
+
+                <blockquote>
+                    <p><strong>Reslane Lounici:</strong> <span data-i18n="critic-reslane">"The Algerian artist Lokher is among those who tentatively explore..."</span></p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2 data-i18n="nav-contact">Contact</h2>
+                <address>
+                    <p><a href="mailto:lokhercontact@gmail.com">lokhercontact@gmail.com</a></p>
+                    <p>+213 558 480 366</p>
+                    <p>Algiers, Algeria</p>
+                </address>
+            </div>
+        </section>
+        <div class="full-width-image"><img src="extracted_images/compressed/page_19.jpg" alt="Lokher Portfolio Back"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Lokher</p>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+        </div>
+        <div class="lightbox-info">
+            <h2></h2>
+            <p class="lightbox-medium"></p>
+            <p class="lightbox-dimensions"></p>
+            <p class="lightbox-year"></p>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

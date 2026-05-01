@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokher — Paintings</title>
+    <meta name="description" content="Paintings by Lokher, artist based in Algiers, Algeria">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Lokher</a>
+        <select id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="ar">ع</option></select>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </header>
+
+    <nav class="nav-overlay" aria-hidden="true">
+        <button class="nav-close" aria-label="Close menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <ul class="nav-list">
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li class="nav-works-item">
+                <button class="nav-works-toggle" type="button" aria-expanded="false" data-i18n="nav-works">Selected Works</button>
+                <ul class="nav-sublist" hidden>
+                    <li><a href="paintings.html">Paintings</a></li>
+                    <li><a href="drawings.html">Drawings</a></li>
+                </ul>
+            </li>
+            <li><a href="journey.html" data-i18n="nav-journey">Exhibitions & Journey</a></li>
+            <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-meta">
+            <p>Algiers, Algeria</p>
+        </div>
+    </nav>
+
+    <main>
+        <section class="works">
+            <div class="works-header">
+                <h1 data-i18n="paintings-title">Paintings</h1>
+            </div>
+            <div id="category-gallery" class="gallery"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Lokher</p>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+        </div>
+        <div class="lightbox-info">
+            <h2></h2>
+            <p class="lightbox-medium"></p>
+            <p class="lightbox-dimensions"></p>
+            <p class="lightbox-year"></p>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script>
+        fetch('portfolio.html')
+            .then(response => response.text())
+            .then(html => {
+                const page = new DOMParser().parseFromString(html, 'text/html');
+                const gallery = page.querySelector('#paintings + .gallery');
+                document.getElementById('category-gallery').innerHTML = gallery ? gallery.innerHTML : '';
+            })
+            .finally(() => {
+                const script = document.createElement('script');
+                script.src = 'script.js';
+                document.body.appendChild(script);
+            });
+    </script>
+</body>
+</html>
