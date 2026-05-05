@@ -40,7 +40,7 @@
     });
 
     const lightbox = document.querySelector('.lightbox');
-    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxContent = document.querySelector('.lightbox-content');
     const lightboxInfoTitle = document.querySelector('.lightbox-info h2');
     const lightboxInfoMedium = document.querySelector('.lightbox-medium');
     const lightboxInfoDimensions = document.querySelector('.lightbox-dimensions');
@@ -48,9 +48,20 @@
     const lightboxClose = document.querySelector('.lightbox-close');
     const artworkLinks = document.querySelectorAll('.artwork-link');
 
-    function openLightbox(imgSrc, title, medium, dimensions, year) {
-        lightboxImage.src = imgSrc;
-        lightboxImage.alt = title;
+    function openLightbox(images, title, medium, dimensions, year) {
+        lightboxContent.replaceChildren();
+
+        images.forEach((image, index) => {
+            const img = document.createElement('img');
+            img.src = image.src;
+            img.alt = image.alt || title;
+            img.className = images.length > 1 ? 'lightbox-panel' : 'lightbox-image';
+            if (index > 0) {
+                img.style.transitionDelay = `${index * 0.05}s`;
+            }
+            lightboxContent.appendChild(img);
+        });
+
         lightboxInfoTitle.textContent = title;
         lightboxInfoMedium.textContent = medium;
         lightboxInfoDimensions.textContent = dimensions;
@@ -74,14 +85,17 @@
 
     artworkLinks.forEach(link => {
         link.addEventListener('click', function() {
-            const img = this.querySelector('img');
+            const images = Array.from(this.querySelectorAll('img')).map(img => ({
+                src: img.src,
+                alt: img.alt
+            }));
             const info = this.parentElement.querySelector('.artwork-info');
             const paragraphs = info.querySelectorAll('p');
             const title = info.querySelector('h2').textContent;
             const medium = paragraphs[0] ? paragraphs[0].textContent : '';
             const dimensions = paragraphs[1] ? paragraphs[1].textContent : '';
             const year = paragraphs[2] ? paragraphs[2].textContent : '';
-            openLightbox(img.src, title, medium, dimensions, year);
+            openLightbox(images, title, medium, dimensions, year);
         });
     });
 

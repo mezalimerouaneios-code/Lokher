@@ -248,6 +248,17 @@ main {
     transition: transform 0.4s ease;
 }
 
+.artwork-image-diptych {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+}
+
+.artwork-image-diptych img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .artwork:hover .artwork-image img {
     transform: scale(1.02);
 }
@@ -404,7 +415,8 @@ main {
     transition: opacity 0.3s ease, visibility 0s linear 0s;
 }
 
-.lightbox.active .lightbox-image {
+.lightbox.active .lightbox-image,
+.lightbox.active .lightbox-panel {
     transform: scale(1);
     opacity: 1;
 }
@@ -427,12 +439,33 @@ main {
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
 }
 
+.lightbox-panel {
+    max-width: 45vw;
+    max-height: 70vh;
+    object-fit: contain;
+    transform: scale(0.95);
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
 .lightbox-info {
     margin-top: var(--spacing-md);
     text-align: center;
     transform: translateY(10px);
     opacity: 0;
     transition: transform 0.4s ease 0.1s, opacity 0.4s ease 0.1s;
+}
+
+@media (max-width: 767px) {
+    .lightbox-content {
+        max-height: 62vh;
+    }
+
+    .lightbox-panel {
+        max-width: calc(50vw - var(--spacing-lg));
+        max-height: 62vh;
+    }
 }
 
 .lightbox.active .lightbox-info {
